@@ -27,8 +27,11 @@ export default function InspecaoExterna1({ route }) {
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
          //lista de itens : (picker.item)
       > 
-        <Picker.Item label="Java" value="java" /> 
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="OK" value="viacirculacaoOK" />
+        <Picker.Item label="NÃO SE APLICA" value="viacirculacaonao" />
+        <Picker.Item label="*1" value="viacirculacaoobs1" />
+        <Picker.Item label="*2" value="viacirculacaoobs2" />
+        <Picker.Item label="*3" value="viacirculacaoobs3" />
       </Picker>  
 
       <Picker
@@ -36,8 +39,11 @@ export default function InspecaoExterna1({ route }) {
         style={{ height: 200, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="OK" value="escadaelevadorOK" />
+        <Picker.Item label="NÃO SE APLICA" value="scadaelevadornao" />
+        <Picker.Item label="*1" value="scadaelevadorobs1" />
+        <Picker.Item label="*2" value="scadaelevadorobs2" />
+        <Picker.Item label="*3" value="scadaelevadorobs3" />
       </Picker>  
 
       <Picker
@@ -45,8 +51,11 @@ export default function InspecaoExterna1({ route }) {
         style={{ height: 200, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="OK" value="piOK" />
+        <Picker.Item label="NÃO SE APLICA" value="pinao" />
+        <Picker.Item label="*1" value="piobs1" />
+        <Picker.Item label="*2" value="piobs2" />
+        <Picker.Item label="*3" value="piobs3" />
       </Picker>  
 
       <Picker
@@ -54,8 +63,11 @@ export default function InspecaoExterna1({ route }) {
         style={{ height: 200, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="OK" value="pdcOK" />
+        <Picker.Item label="NÃO SE APLICA" value="pdcnao" />
+        <Picker.Item label="*1" value="pdcobs1" />
+        <Picker.Item label="*2" value="pdcobs2" />
+        <Picker.Item label="*3" value="pdcobs3" />
       </Picker>  
 
       <Picker
@@ -63,8 +75,11 @@ export default function InspecaoExterna1({ route }) {
         style={{ height: 200, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="OK" value="fundacaoOK" />
+        <Picker.Item label="NÃO SE APLICA" value="fundacaonao" />
+        <Picker.Item label="*1" value="fundacaoobs1" />
+        <Picker.Item label="*2" value="fundacaoobs2" />
+        <Picker.Item label="*3" value="fundacaoobs3" />
       </Picker>  
     </View> 
     
