@@ -11,6 +11,7 @@ import InspecaoExterna3 from './src/pages/InspecaoExterna3';
 import InspecaoExterna4 from './src/pages/InspecaoExterna4'; 
 import InspecaoExterna5 from './src/pages/InspecaoExterna5'; 
 import TelaConfirmacao from './src/pages/TelaConfirmacao'; 
+import Conversoes from './src/pages/Conversoes'; 
 
 //Criando a pilha de navegacao
 const Stack = createStackNavigator();
@@ -101,6 +102,18 @@ class App extends Component{
           component={TelaConfirmacao}
           options={{
             title:'Revisão',
+            headerStyle:{
+              backgroundColor: '#214E88' },
+            headerTintColor: '#FFF',
+            headerShown: true,
+          }}
+          />
+
+          <Stack.Screen 
+          name="Conversoes" 
+          component={Conversoes}
+          options={{
+            title:'Conversoes',
             headerStyle:{
               backgroundColor: '#214E88' },
             headerTintColor: '#FFF',
