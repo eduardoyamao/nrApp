@@ -8,8 +8,7 @@ import Inicio from './src/pages/Inicio';
 import InspecaoExterna1 from './src/pages/InspecaoExterna1'; 
 import InspecaoExterna2 from './src/pages/InspecaoExterna2'; 
 import InspecaoExterna3 from './src/pages/InspecaoExterna3'; 
-import InspecaoExterna4 from './src/pages/InspecaoExterna4'; 
-import InspecaoExterna5 from './src/pages/InspecaoExterna5'; 
+import InspecaoExterna4 from './src/pages/InspecaoExterna4';  
 import TelaConfirmacao from './src/pages/TelaConfirmacao'; 
 import Conversoes from './src/pages/Conversoes'; 
 
@@ -83,19 +82,7 @@ class App extends Component{
             headerTintColor: '#FFF',
             headerShown: true,
           }}
-          />
-          
-          <Stack.Screen 
-          name="InspecaoExterna5" 
-          component={InspecaoExterna5}
-          options={{
-            title:'Inspeção Externa 5',
-            headerStyle:{
-              backgroundColor: '#214E88' },
-            headerTintColor: '#FFF',
-            headerShown: true,
-          }}
-          />
+          />  
           
           <Stack.Screen 
           name="TelaConfirmacao" 
