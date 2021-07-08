@@ -18,51 +18,78 @@ export default function InspecaoExterna3({ route }) {
     <View style={{height: 120 , backgroundColor: '#64CAD9'}}></View>
     <View style={{flex: 1, backgroundColor: '#214E88'}}>
       
+    <Picker
+        selectedValue={selectedValue}
+        style={{ height: 100, width: 300 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+      >
+        <Picker.Item label="OK" value="purgadorok" />
+        <Picker.Item label="NÃO SE APLICA" value="purgadornao" />
+        <Picker.Item label="*1" value="purgadorobs1" />
+        <Picker.Item label="*2" value="purgadorobs2" />
+        <Picker.Item label="*3" value="purgadorobs3" />
+      </Picker>  
+
+      <Picker
+        selectedValue={selectedValue}
+        style={{ height: 100, width: 300 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+      >
+        <Picker.Item label="OK" value="mdnOK" />
+        <Picker.Item label="NÃO SE APLICA" value="mdnnao" />
+        <Picker.Item label="*1" value="mdnobs1" />
+        <Picker.Item label="*2" value="mdnobs2" />
+        <Picker.Item label="*3" value="mdnobs3" />
+      </Picker>  
+
+      <Picker
+        selectedValue={selectedValue}
+        style={{ height: 100, width: 300 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+      >
+        <Picker.Item label="OK" value="aterraOK" />
+        <Picker.Item label="NÃO SE APLICA" value="aterranao" />
+        <Picker.Item label="*1" value="aterraobs1" />
+        <Picker.Item label="*2" value="aterraobs2" />
+        <Picker.Item label="*3" value="aterraobs3" />
+      </Picker>  
     <Picker //criação dos pickers (caixas para seleção de opção )
         selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
+        style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
          //lista de itens : (picker.item)
       > 
-        <Picker.Item label="Java" value="java" /> 
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="OK" value="cfvOK" />
+        <Picker.Item label="NÃO SE APLICA" value="cfvnao" />
+        <Picker.Item label="*1" value="cfvobs1" />
+        <Picker.Item label="*2" value="cfvobs2" />
+        <Picker.Item label="*3" value="cfvobs3" />
       </Picker>  
 
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
+        style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="OK" value="tubOK" />
+        <Picker.Item label="NÃO SE APLICA" value="  tubnao" />
+        <Picker.Item label="*1" value="tubobs1" />
+        <Picker.Item label="*2" value="tubobs2" />
+        <Picker.Item label="*3" value="tubobs3" />
       </Picker>  
 
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
+        style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="OK" value="cok" />
+        <Picker.Item label="NÃO SE APLICA" value="cnao" />
+        <Picker.Item label="*1" value="cobs1" />
+        <Picker.Item label="*2" value="cobs2" />
+        <Picker.Item label="*3" value="cobs3" />
       </Picker>  
 
-      <Picker
-        selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
-      >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
-      </Picker>  
-
-      <Picker
-        selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
-      >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
-      </Picker>  
     </View> 
 
     <Button  // botao voltar

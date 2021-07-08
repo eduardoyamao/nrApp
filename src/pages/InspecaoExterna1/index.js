@@ -23,7 +23,7 @@ export default function InspecaoExterna1({ route }) {
     
     <Picker //criação dos pickers (caixas para seleção de opção )
         selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
+        style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
          //lista de itens : (picker.item)
       > 
@@ -36,7 +36,7 @@ export default function InspecaoExterna1({ route }) {
 
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
+        style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="OK" value="escadaelevadorOK" />
@@ -48,7 +48,7 @@ export default function InspecaoExterna1({ route }) {
 
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
+        style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="OK" value="piOK" />
@@ -60,7 +60,7 @@ export default function InspecaoExterna1({ route }) {
 
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
+        style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="OK" value="pdcOK" />
@@ -69,10 +69,9 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*2" value="pdcobs2" />
         <Picker.Item label="*3" value="pdcobs3" />
       </Picker>  
-
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 200, width: 300 }}
+        style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="OK" value="fundacaoOK" />
@@ -81,6 +80,21 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*2" value="fundacaoobs2" />
         <Picker.Item label="*3" value="fundacaoobs3" />
       </Picker>  
+
+      <Picker //criação dos pickers (caixas para seleção de opção )
+        selectedValue={selectedValue}
+        style={{ height: 100, width: 300 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+         //lista de itens : (picker.item)
+      > 
+        <Picker.Item label="OK" value="sustfix" />
+        <Picker.Item label="NÃO SE APLICA" value="vsustfixnao" />
+        <Picker.Item label="*1" value="sustfixobs1" />
+        <Picker.Item label="*2" value="sustfixobs2" />
+        <Picker.Item label="*3" value="sustfixobs3" />
+      </Picker>  
+
+
     </View> 
     
     <Button //botao para voltar
