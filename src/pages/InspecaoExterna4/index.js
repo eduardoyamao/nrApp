@@ -18,7 +18,7 @@ export default function InspecaoExterna4({ route }) {
     <View style={{height: 120 , backgroundColor: '#64CAD9'}}></View>
     <View style={{flex: 1, backgroundColor: '#214E88'}}>
       
-    <Text style={styles.title}> OUTROS </Text>
+    <Text> OUTROS </Text>
     <Text> DEMAIS COMPONENTES </Text>
     <Picker
         selectedValue={selectedValue}
