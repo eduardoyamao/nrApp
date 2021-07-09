@@ -20,7 +20,8 @@ export default function InspecaoExterna2({ route }) {
 
     <View style={{flex: 1, backgroundColor: '#214E88'}}>
     
-
+    <Text> COSTADO </Text>
+    <Text> SUPERFÍCIE EXTERNA </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -33,6 +34,7 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*3" value="supexternaobs3" />
       </Picker>  
 
+      <Text> CORDÕES DE SOLDA </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -44,6 +46,8 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*2" value="cordoesobs2" />
         <Picker.Item label="*3" value="cordoesobs3" />
       </Picker>  
+
+      <Text> JANELA DE INSPEÇÃO </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -56,6 +60,8 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*3" value="jinspobs3" />
       </Picker>  
 
+      <Text> ITENS DE SEGURANÇA </Text>
+      <Text> VSE </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -68,6 +74,7 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*3" value="vseobs3" />
       </Picker>  
 
+      <Text> INDICADOR DE PRESSÃO (MANÔMETRO) </Text>
       <Picker //criação dos pickers (caixas para seleção de opção )
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -81,6 +88,7 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*3" value="ipressaoobs3" />
       </Picker>  
 
+      <Text> PRESSOSTATO </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}

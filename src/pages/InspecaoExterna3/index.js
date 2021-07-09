@@ -17,7 +17,9 @@ export default function InspecaoExterna3({ route }) {
     <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
     <View style={{height: 120 , backgroundColor: '#64CAD9'}}></View>
     <View style={{flex: 1, backgroundColor: '#214E88'}}>
-      
+
+    <Text> ACESSÓRIOS </Text> 
+    <Text> PURGADOR </Text> 
     <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -30,6 +32,7 @@ export default function InspecaoExterna3({ route }) {
         <Picker.Item label="*3" value="purgadorobs3" />
       </Picker>  
 
+      <Text> MEDIDOR DE NÍVEL </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -42,6 +45,7 @@ export default function InspecaoExterna3({ route }) {
         <Picker.Item label="*3" value="mdnobs3" />
       </Picker>  
 
+      <Text> ATERRAMENTO </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -53,7 +57,9 @@ export default function InspecaoExterna3({ route }) {
         <Picker.Item label="*2" value="aterraobs2" />
         <Picker.Item label="*3" value="aterraobs3" />
       </Picker>  
-    <Picker //criação dos pickers (caixas para seleção de opção )
+
+      <Text> CONEXÕES, FLANGES E VÁLVULAS </Text>
+      <Picker //criação dos pickers (caixas para seleção de opção )
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
@@ -66,6 +72,7 @@ export default function InspecaoExterna3({ route }) {
         <Picker.Item label="*3" value="cfvobs3" />
       </Picker>  
 
+      <Text> TUBULAÇÕES </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -78,6 +85,7 @@ export default function InspecaoExterna3({ route }) {
         <Picker.Item label="*3" value="tubobs3" />
       </Picker>  
 
+      <Text> COMPRESSOR </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}

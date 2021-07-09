@@ -20,7 +20,8 @@ export default function InspecaoExterna1({ route }) {
 
     <View style={{flex: 1, backgroundColor: '#214E88'}}>
 
-    
+    <Text> VIAS DE ACESSO </Text>
+    <Text> VIAS DE CIRCULAÇÃO E ILUMINAÇÃO </Text>
     <Picker //criação dos pickers (caixas para seleção de opção )
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -33,7 +34,7 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*2" value="viacirculacaoobs2" />
         <Picker.Item label="*3" value="viacirculacaoobs3" />
       </Picker>  
-
+      <Text> ESCADAS E ELEVADOR </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -46,6 +47,8 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*3" value="scadaelevadorobs3" />
       </Picker>  
 
+      <Text> IDENTIFICAÇÃO </Text>
+      <Text> PLACA DE IDENTIFICAÇÃO </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -57,7 +60,7 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*2" value="piobs2" />
         <Picker.Item label="*3" value="piobs3" />
       </Picker>  
-
+      <Text> PLACA DE CATEGORIA </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -69,6 +72,10 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*2" value="pdcobs2" />
         <Picker.Item label="*3" value="pdcobs3" />
       </Picker>  
+
+      <Text> SUSTENTAÇÃO </Text>
+
+      <Text> FUNDAÇÃO </Text>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
@@ -80,7 +87,7 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*2" value="fundacaoobs2" />
         <Picker.Item label="*3" value="fundacaoobs3" />
       </Picker>  
-
+      <Text> ELEMENTOS DE SUSTENTAÇÃO E FIXAÇÃO </Text>
       <Picker //criação dos pickers (caixas para seleção de opção )
         selectedValue={selectedValue}
         style={{ height: 100, width: 300 }}
