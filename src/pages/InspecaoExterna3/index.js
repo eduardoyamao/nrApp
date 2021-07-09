@@ -32,9 +32,7 @@ export default function InspecaoExterna3({ route }) {
       >
         <Picker.Item label="OK" value="purgadorok" />
         <Picker.Item label="NÃO SE APLICA" value="purgadornao" />
-        <Picker.Item label="*1" value="purgadorobs1" />
-        <Picker.Item label="*2" value="purgadorobs2" />
-        <Picker.Item label="*3" value="purgadorobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="purgadorobs1" /> 
       </Picker>  
 
       <Text> MEDIDOR DE NÍVEL </Text>
@@ -45,9 +43,7 @@ export default function InspecaoExterna3({ route }) {
       >
         <Picker.Item label="OK" value="mdnOK" />
         <Picker.Item label="NÃO SE APLICA" value="mdnnao" />
-        <Picker.Item label="*1" value="mdnobs1" />
-        <Picker.Item label="*2" value="mdnobs2" />
-        <Picker.Item label="*3" value="mdnobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="mdnobs1" /> 
       </Picker>  
 
       <Text> ATERRAMENTO </Text>
@@ -58,9 +54,7 @@ export default function InspecaoExterna3({ route }) {
       >
         <Picker.Item label="OK" value="aterraOK" />
         <Picker.Item label="NÃO SE APLICA" value="aterranao" />
-        <Picker.Item label="*1" value="aterraobs1" />
-        <Picker.Item label="*2" value="aterraobs2" />
-        <Picker.Item label="*3" value="aterraobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="aterraobs1" /> 
       </Picker>  
 
       <Text> CONEXÕES, FLANGES E VÁLVULAS </Text>
@@ -72,9 +66,7 @@ export default function InspecaoExterna3({ route }) {
       > 
         <Picker.Item label="OK" value="cfvOK" />
         <Picker.Item label="NÃO SE APLICA" value="cfvnao" />
-        <Picker.Item label="*1" value="cfvobs1" />
-        <Picker.Item label="*2" value="cfvobs2" />
-        <Picker.Item label="*3" value="cfvobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="cfvobs1" /> 
       </Picker>  
 
       <Text> TUBULAÇÕES </Text>
@@ -85,9 +77,7 @@ export default function InspecaoExterna3({ route }) {
       >
         <Picker.Item label="OK" value="tubOK" />
         <Picker.Item label="NÃO SE APLICA" value="  tubnao" />
-        <Picker.Item label="*1" value="tubobs1" />
-        <Picker.Item label="*2" value="tubobs2" />
-        <Picker.Item label="*3" value="tubobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="tubobs1" /> 
       </Picker>  
 
       <Text> COMPRESSOR </Text>
@@ -98,9 +88,7 @@ export default function InspecaoExterna3({ route }) {
       >
         <Picker.Item label="OK" value="cok" />
         <Picker.Item label="NÃO SE APLICA" value="cnao" />
-        <Picker.Item label="*1" value="cobs1" />
-        <Picker.Item label="*2" value="cobs2" />
-        <Picker.Item label="*3" value="cobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="cobs1" /> 
       </Picker>  
 
     </View> 

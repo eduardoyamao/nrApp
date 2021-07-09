@@ -27,9 +27,7 @@ export default function InspecaoExterna4({ route }) {
       >
         <Picker.Item label="OK" value="dcok" />
         <Picker.Item label="NÃO SE APLICA" value="dcnao" />
-        <Picker.Item label="*1" value="dcobs1" />
-        <Picker.Item label="*2" value="dcobs2" />
-        <Picker.Item label="*3" value="dcobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="dcobs1" /> 
       </Picker>  
 
     </View> 

@@ -11,6 +11,11 @@ export default function InspecaoExterna1({ route }) {
     navigation.navigate('InspecaoExterna2');
   }
 
+
+  // 9 OBSERVAÇÕES !!! 
+  // APENAS 3 CAMPOS - APLICA, NÃO APLICA, OBSERVAÇÃO  
+  // SE TIVER OBSERVAÇÃO CADA OPÇÃO VAI SER SÓ UMA OBSERVAÇÃO!! ENTÃO APENAS UMA (OK)
+
   const [viacirculacao, setViacirculacao] = useState("Selecione Uma opção");
   const [selectedescada, setSelectedEscada] = useState("Selecione Uma opção"); 
   const [selectedpio, setSelectedPi] = useState("Selecione Uma opção"); 
@@ -36,9 +41,7 @@ export default function InspecaoExterna1({ route }) {
       > 
         <Picker.Item label="OK" value="viacirculacaoOK" />
         <Picker.Item label="NÃO SE APLICA" value="viacirculacaonao" />
-        <Picker.Item label="*1" value="viacirculacaoobs1" />
-        <Picker.Item label="*2" value="viacirculacaoobs2" />
-        <Picker.Item label="*3" value="viacirculacaoobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="viacirculacaoobs1" /> 
       </Picker>  
 
       <Text> ESCADAS E ELEVADOR </Text>
@@ -49,9 +52,7 @@ export default function InspecaoExterna1({ route }) {
       >
         <Picker.Item label="OK" value="escadaelevadorOK" />
         <Picker.Item label="NÃO SE APLICA" value="scadaelevadornao" />
-        <Picker.Item label="*1" value="scadaelevadorobs1" />
-        <Picker.Item label="*2" value="scadaelevadorobs2" />
-        <Picker.Item label="*3" value="scadaelevadorobs3" />
+        <Picker.Item label="*OBSERVACÃO" value="scadaelevadorobs1" /> 
       </Picker>  
 
       <Text> IDENTIFICAÇÃO </Text>
@@ -63,9 +64,7 @@ export default function InspecaoExterna1({ route }) {
       >
         <Picker.Item label="OK" value="piOK" />
         <Picker.Item label="NÃO SE APLICA" value="pinao" />
-        <Picker.Item label="*1" value="piobs1" />
-        <Picker.Item label="*2" value="piobs2" />
-        <Picker.Item label="*3" value="piobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="piobs1" /> 
       </Picker>  
       <Text> PLACA DE CATEGORIA </Text>
       <Picker
@@ -75,9 +74,7 @@ export default function InspecaoExterna1({ route }) {
       >
         <Picker.Item label="OK" value="pdcOK" />
         <Picker.Item label="NÃO SE APLICA" value="pdcnao" />
-        <Picker.Item label="*1" value="pdcobs1" />
-        <Picker.Item label="*2" value="pdcobs2" />
-        <Picker.Item label="*3" value="pdcobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="pdcobs1" /> 
       </Picker>  
 
       <Text> SUSTENTAÇÃO </Text>
@@ -90,9 +87,7 @@ export default function InspecaoExterna1({ route }) {
       >
         <Picker.Item label="OK" value="fundacaoOK" />
         <Picker.Item label="NÃO SE APLICA" value="fundacaonao" />
-        <Picker.Item label="*1" value="fundacaoobs1" />
-        <Picker.Item label="*2" value="fundacaoobs2" />
-        <Picker.Item label="*3" value="fundacaoobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="fundacaoobs1" /> 
       </Picker>  
       <Text> ELEMENTOS DE SUSTENTAÇÃO E FIXAÇÃO </Text>
       <Picker //criação dos pickers (caixas para seleção de opção )
@@ -103,9 +98,7 @@ export default function InspecaoExterna1({ route }) {
       > 
         <Picker.Item label="OK" value="sustfix" />
         <Picker.Item label="NÃO SE APLICA" value="vsustfixnao" />
-        <Picker.Item label="*1" value="sustfixobs1" />
-        <Picker.Item label="*2" value="sustfixobs2" />
-        <Picker.Item label="*3" value="sustfixobs3" />
+        <Picker.Item label="*OBSERVAÇÃO" value="sustfixobs1" /> 
       </Picker>  
 
 
