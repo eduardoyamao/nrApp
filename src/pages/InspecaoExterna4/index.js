@@ -11,7 +11,7 @@ export default function InspecaoExterna4({ route }) {
     navigation.navigate('TelaConfirmacao');
   }
 
-  const [selectedValue, setSelectedValue] = useState("Selecione Uma opção");
+  const [selectedValuedc, setSelectedValuedc] = useState("Selecione Uma opção");
 
   return (
     <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
@@ -21,9 +21,9 @@ export default function InspecaoExterna4({ route }) {
     <Text> OUTROS </Text>
     <Text> DEMAIS COMPONENTES </Text>
     <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuedc}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuedc(itemValue)}
       >
         <Picker.Item label="OK" value="dcok" />
         <Picker.Item label="NÃO SE APLICA" value="dcnao" />

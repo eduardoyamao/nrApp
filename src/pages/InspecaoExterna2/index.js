@@ -11,7 +11,12 @@ export default function InspecaoExterna2({ route }) {
     navigation.navigate('InspecaoExterna3');
   }
 
-  const [selectedValue, setSelectedValue] = useState("Selecione Uma opção");
+  const [selectedValuese, setSelectedValuese] = useState("Selecione Uma opção");
+  const [selectedValuecds, setSelectedValuecds] = useState("Selecione Uma opção");
+  const [selectedValuejdi, setSelectedValuejdi] = useState("Selecione Uma opção");
+  const [selectedValueids, setSelectedValueids] = useState("Selecione Uma opção");
+  const [selectedValueidp, setSelectedValueidp] = useState("Selecione Uma opção");
+  const [selectedValuep, setSelectedValuep] = useState("Selecione Uma opção");
 
   return (
     <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
@@ -23,9 +28,9 @@ export default function InspecaoExterna2({ route }) {
     <Text> COSTADO </Text>
     <Text> SUPERFÍCIE EXTERNA </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuese}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuese(itemValue)}
       >
         <Picker.Item label="OK" value="supexternaOK" />
         <Picker.Item label="NÃO SE APLICA" value="  supexternanao" />
@@ -36,9 +41,9 @@ export default function InspecaoExterna2({ route }) {
 
       <Text> CORDÕES DE SOLDA </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuecds}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuecds(itemValue)}
       >
         <Picker.Item label="OK" value="cordoesok" />
         <Picker.Item label="NÃO SE APLICA" value="cordoesnao" />
@@ -49,9 +54,9 @@ export default function InspecaoExterna2({ route }) {
 
       <Text> JANELA DE INSPEÇÃO </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuejdi}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuejdi(itemValue)}
       >
         <Picker.Item label="OK" value="jinspOK" />
         <Picker.Item label="NÃO SE APLICA" value="jinspnao" />
@@ -63,9 +68,9 @@ export default function InspecaoExterna2({ route }) {
       <Text> ITENS DE SEGURANÇA </Text>
       <Text> VSE </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValueids}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValueids(itemValue)}
       >
         <Picker.Item label="OK" value="vseOK" />
         <Picker.Item label="NÃO SE APLICA" value="vsenao" />
@@ -76,9 +81,9 @@ export default function InspecaoExterna2({ route }) {
 
       <Text> INDICADOR DE PRESSÃO (MANÔMETRO) </Text>
       <Picker //criação dos pickers (caixas para seleção de opção )
-        selectedValue={selectedValue}
+        selectedValue={selectedValueidp}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValueidp(itemValue)}
          //lista de itens : (picker.item)
       > 
         <Picker.Item label="OK" value="ipressao" />
@@ -90,9 +95,9 @@ export default function InspecaoExterna2({ route }) {
 
       <Text> PRESSOSTATO </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuep}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuep(itemValue)}
       >
         <Picker.Item label="OK" value="pressostatoOK" />
         <Picker.Item label="NÃO SE APLICA" value="  pressostatonao" />

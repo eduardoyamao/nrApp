@@ -11,7 +11,12 @@ export default function InspecaoExterna3({ route }) {
     navigation.navigate('InspecaoExterna4');
   }
 
-  const [selectedValue, setSelectedValue] = useState("Selecione Uma opção");
+  const [selectedValuepur, setSelectedValuepur] = useState("Selecione Uma opção");
+  const [selectedValuemdn, setSelectedValuemdn] = useState("Selecione Uma opção");
+  const [selectedValueat, setSelectedValueat] = useState("Selecione Uma opção");
+  const [selectedValuecfv, setSelectedValuecfv] = useState("Selecione Uma opção");
+  const [selectedValuetub, setSelectedValuetub] = useState("Selecione Uma opção");
+  const [selectedValuecomp, setSelectedValuecomp] = useState("Selecione Uma opção");
 
   return (
     <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
@@ -21,9 +26,9 @@ export default function InspecaoExterna3({ route }) {
     <Text> ACESSÓRIOS </Text> 
     <Text> PURGADOR </Text> 
     <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuepur}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuepur(itemValue)}
       >
         <Picker.Item label="OK" value="purgadorok" />
         <Picker.Item label="NÃO SE APLICA" value="purgadornao" />
@@ -34,9 +39,9 @@ export default function InspecaoExterna3({ route }) {
 
       <Text> MEDIDOR DE NÍVEL </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuemdn}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuemdn(itemValue)}
       >
         <Picker.Item label="OK" value="mdnOK" />
         <Picker.Item label="NÃO SE APLICA" value="mdnnao" />
@@ -47,9 +52,9 @@ export default function InspecaoExterna3({ route }) {
 
       <Text> ATERRAMENTO </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValueat}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValueat(itemValue)}
       >
         <Picker.Item label="OK" value="aterraOK" />
         <Picker.Item label="NÃO SE APLICA" value="aterranao" />
@@ -60,9 +65,9 @@ export default function InspecaoExterna3({ route }) {
 
       <Text> CONEXÕES, FLANGES E VÁLVULAS </Text>
       <Picker //criação dos pickers (caixas para seleção de opção )
-        selectedValue={selectedValue}
+        selectedValue={selectedValuecfv}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuecfv(itemValue)}
          //lista de itens : (picker.item)
       > 
         <Picker.Item label="OK" value="cfvOK" />
@@ -74,9 +79,9 @@ export default function InspecaoExterna3({ route }) {
 
       <Text> TUBULAÇÕES </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuetub}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuetub(itemValue)}
       >
         <Picker.Item label="OK" value="tubOK" />
         <Picker.Item label="NÃO SE APLICA" value="  tubnao" />
@@ -87,9 +92,9 @@ export default function InspecaoExterna3({ route }) {
 
       <Text> COMPRESSOR </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedValuecomp}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedValuecomp(itemValue)}
       >
         <Picker.Item label="OK" value="cok" />
         <Picker.Item label="NÃO SE APLICA" value="cnao" />

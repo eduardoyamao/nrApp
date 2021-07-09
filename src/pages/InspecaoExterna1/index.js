@@ -11,7 +11,12 @@ export default function InspecaoExterna1({ route }) {
     navigation.navigate('InspecaoExterna2');
   }
 
-  const [selectedValue, setSelectedValue] = useState("Selecione Uma opção");
+  const [viacirculacao, setViacirculacao] = useState("Selecione Uma opção");
+  const [selectedescada, setSelectedEscada] = useState("Selecione Uma opção"); 
+  const [selectedpio, setSelectedPi] = useState("Selecione Uma opção"); 
+  const [selectedpdc, setSelectedPdc] = useState("Selecione Uma opção"); 
+  const [selectedfundacao, setSelectedFundacao] = useState("Selecione Uma opção"); 
+  const [selectedSustfix, setSelectedsustfix] = useState("Selecione Uma opção"); 
 
   return (
     <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
@@ -22,10 +27,11 @@ export default function InspecaoExterna1({ route }) {
 
     <Text> VIAS DE ACESSO </Text>
     <Text> VIAS DE CIRCULAÇÃO E ILUMINAÇÃO </Text>
+
     <Picker //criação dos pickers (caixas para seleção de opção )
-        selectedValue={selectedValue}
+        selectedValue={viacirculacao}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setViacirculacao(itemValue)}
          //lista de itens : (picker.item)
       > 
         <Picker.Item label="OK" value="viacirculacaoOK" />
@@ -34,11 +40,12 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*2" value="viacirculacaoobs2" />
         <Picker.Item label="*3" value="viacirculacaoobs3" />
       </Picker>  
+
       <Text> ESCADAS E ELEVADOR </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedescada}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedEscada(itemValue)}
       >
         <Picker.Item label="OK" value="escadaelevadorOK" />
         <Picker.Item label="NÃO SE APLICA" value="scadaelevadornao" />
@@ -50,9 +57,9 @@ export default function InspecaoExterna1({ route }) {
       <Text> IDENTIFICAÇÃO </Text>
       <Text> PLACA DE IDENTIFICAÇÃO </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedpio}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedPi(itemValue)}
       >
         <Picker.Item label="OK" value="piOK" />
         <Picker.Item label="NÃO SE APLICA" value="pinao" />
@@ -62,9 +69,9 @@ export default function InspecaoExterna1({ route }) {
       </Picker>  
       <Text> PLACA DE CATEGORIA </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedpdc}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedPdc(itemValue)}
       >
         <Picker.Item label="OK" value="pdcOK" />
         <Picker.Item label="NÃO SE APLICA" value="pdcnao" />
@@ -77,9 +84,9 @@ export default function InspecaoExterna1({ route }) {
 
       <Text> FUNDAÇÃO </Text>
       <Picker
-        selectedValue={selectedValue}
+        selectedValue={selectedfundacao}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedFundacao(itemValue)}
       >
         <Picker.Item label="OK" value="fundacaoOK" />
         <Picker.Item label="NÃO SE APLICA" value="fundacaonao" />
@@ -89,9 +96,9 @@ export default function InspecaoExterna1({ route }) {
       </Picker>  
       <Text> ELEMENTOS DE SUSTENTAÇÃO E FIXAÇÃO </Text>
       <Picker //criação dos pickers (caixas para seleção de opção )
-        selectedValue={selectedValue}
+        selectedValue={selectedSustfix}
         style={{ height: 100, width: 300 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        onValueChange={(itemValue, itemIndex) => setSelectedsustfix(itemValue)}
          //lista de itens : (picker.item)
       > 
         <Picker.Item label="OK" value="sustfix" />
