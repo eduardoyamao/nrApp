@@ -1,6 +1,6 @@
 //Importando bibliotecas
 import React, {useState} from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Picker } from '@react-native-picker/picker';  
 
@@ -44,7 +44,7 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="supexternaobs1" /> 
       </Picker>  
 
-      { selectedValueseobs == "supexternaobs1" &&
+      { selectedValuese == "supexternaobs1" &&
        <TextInput  
        placeholder="insira a observação"
        underlineColorAndroid="transparent"
@@ -63,11 +63,11 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="cordoesbs1" /> 
       </Picker>  
 
-      { selectedfundacao == "fundacaoobs1" &&
+      { selectedValuecds == "cordoesbs1" &&
        <TextInput  
        placeholder="insira a observação"
        underlineColorAndroid="transparent"
-       onChangeText={setViacirculacaoobs}
+       onChangeText={setSelectedValuecdsobs}
        />
       }
 
@@ -82,11 +82,11 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="jinspobs1" /> 
       </Picker>  
 
-      { selectedfundacao == "fundacaoobs1" &&
+      { selectedValuejdi == "jinspobs1" &&
        <TextInput  
        placeholder="insira a observação"
        underlineColorAndroid="transparent"
-       onChangeText={setViacirculacaoobs}
+       onChangeText={setSelectedValuejdiobs}
        />
       }
 
@@ -102,11 +102,11 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="vseobs1" /> 
       </Picker>  
 
-      { selectedfundacao == "fundacaoobs1" &&
+      { selectedValueids == "vseobs1" &&
        <TextInput  
        placeholder="insira a observação"
        underlineColorAndroid="transparent"
-       onChangeText={setViacirculacaoobs}
+       onChangeText={setSelectedValueidsobs}
        />
       }
 
@@ -122,11 +122,11 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="ipressaoobs1" /> 
       </Picker>  
 
-      { selectedfundacao == "fundacaoobs1" &&
+      { selectedValueidp == "ipressaoobs1" &&
        <TextInput  
        placeholder="insira a observação"
        underlineColorAndroid="transparent"
-       onChangeText={setViacirculacaoobs}
+       onChangeText={setSelectedValueidpobs}
        />
       }
 
@@ -141,11 +141,11 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="pressostatoobs1" /> 
       </Picker>  
     
-    { selectedfundacao == "fundacaoobs1" &&
+    { selectedValuep == "pressostatoobs1" &&
        <TextInput  
        placeholder="insira a observação"
        underlineColorAndroid="transparent"
-       onChangeText={setViacirculacaoobs}
+       onChangeText={setSelectedValuepobs}
        />
       }
     </View> 

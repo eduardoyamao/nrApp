@@ -12,6 +12,7 @@ export default function InspecaoExterna4({ route }) {
   }
 
   const [selectedValuedc, setSelectedValuedc] = useState("Selecione Uma opção");
+  const [selectedValuedcobs, setSelectedValuedcobs] = useState("Selecione Uma opção");
 
   return (
     <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
@@ -30,6 +31,13 @@ export default function InspecaoExterna4({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="dcobs1" /> 
       </Picker>  
 
+      { selectedValuedc == "dcobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setSelectedValuedcobs}
+       />
+      }
     </View> 
 
     <Button // botao voltar
