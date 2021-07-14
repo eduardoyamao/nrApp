@@ -16,7 +16,7 @@ export default function Conversoes({ route }) {
     <View style={{flex: 1, backgroundColor: '#214E88'}}>
 
         <Text /* fran, coloca as coisas aqui dentro que vc for fazer da conversao */ >
-            coloque  tudo aqui 
+            coloque  tudo aqui   
         </Text> 
 
     </View> 

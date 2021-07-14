@@ -18,6 +18,13 @@ export default function InspecaoExterna2({ route }) {
   const [selectedValueidp, setSelectedValueidp] = useState("Selecione Uma opção");
   const [selectedValuep, setSelectedValuep] = useState("Selecione Uma opção");
 
+  const [selectedValueseobs, setSelectedValueseobs] = useState(" ");
+  const [selectedValuecdsobs, setSelectedValuecdsobs] = useState(" ");
+  const [selectedValuejdiobs, setSelectedValuejdiobs] = useState(" ");
+  const [selectedValueidsobs, setSelectedValueidsobs] = useState(" ");
+  const [selectedValueidpobs, setSelectedValueidpobs] = useState(" ");
+  const [selectedValuepobs, setSelectedValuepobs] = useState(" ");
+
   return (
     <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
 
@@ -37,6 +44,14 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="supexternaobs1" /> 
       </Picker>  
 
+      { selectedValueseobs == "supexternaobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setSelectedValueseobs}
+       />
+      }
+
       <Text> CORDÕES DE SOLDA </Text>
       <Picker
         selectedValue={selectedValuecds}
@@ -48,6 +63,14 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="cordoesbs1" /> 
       </Picker>  
 
+      { selectedfundacao == "fundacaoobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setViacirculacaoobs}
+       />
+      }
+
       <Text> JANELA DE INSPEÇÃO </Text>
       <Picker
         selectedValue={selectedValuejdi}
@@ -58,6 +81,14 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="NÃO SE APLICA" value="jinspnao" />
         <Picker.Item label="*OBSERVAÇÃO" value="jinspobs1" /> 
       </Picker>  
+
+      { selectedfundacao == "fundacaoobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setViacirculacaoobs}
+       />
+      }
 
       <Text> ITENS DE SEGURANÇA </Text>
       <Text> VSE </Text>
@@ -71,6 +102,14 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="vseobs1" /> 
       </Picker>  
 
+      { selectedfundacao == "fundacaoobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setViacirculacaoobs}
+       />
+      }
+
       <Text> INDICADOR DE PRESSÃO (MANÔMETRO) </Text>
       <Picker //criação dos pickers (caixas para seleção de opção )
         selectedValue={selectedValueidp}
@@ -83,6 +122,14 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="ipressaoobs1" /> 
       </Picker>  
 
+      { selectedfundacao == "fundacaoobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setViacirculacaoobs}
+       />
+      }
+
       <Text> PRESSOSTATO </Text>
       <Picker
         selectedValue={selectedValuep}
@@ -93,9 +140,16 @@ export default function InspecaoExterna2({ route }) {
         <Picker.Item label="NÃO SE APLICA" value="  pressostatonao" />
         <Picker.Item label="*OBSERVAÇÃO" value="pressostatoobs1" /> 
       </Picker>  
-
-    </View> 
     
+    { selectedfundacao == "fundacaoobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setViacirculacaoobs}
+       />
+      }
+    </View> 
+
     <Button //botao para voltar
      title=" Voltar "
      onPress={ () => navigation.goBack() }

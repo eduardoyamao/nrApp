@@ -1,10 +1,12 @@
 //Importando bibliotecas
+//https://nativebase.io/
 import React, {useState} from 'react';
-import { View, Text, Button } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; 
+import { View, Text, Button, ViewPagerAndroidBase, TextInput, Flex } from 'react-native';
+import { useNavigation, StyleSheet } from '@react-navigation/native'; 
 import { Picker } from '@react-native-picker/picker';  
 
 export default function InspecaoExterna1({ route }) {
+
   const navigation = useNavigation();
   //funcao que chama a pg inspecao externa 2
   function irInspecaoExterna2(){
@@ -22,18 +24,25 @@ export default function InspecaoExterna1({ route }) {
   const [selectedpdc, setSelectedPdc] = useState("Selecione Uma opção"); 
   const [selectedfundacao, setSelectedFundacao] = useState("Selecione Uma opção"); 
   const [selectedSustfix, setSelectedsustfix] = useState("Selecione Uma opção"); 
+  const [viacirculacaoobs, setViacirculacaoobs] = useState(" ");
+  const [selectedescadaobs, setSelectedEscadaobs] = useState(" "); 
+  const [selectedpioobs, setSelectedPiobs] = useState(" "); 
+  const [selectedpdcobs, setSelectedPdcobs] = useState(" "); 
+  const [selectedfundacaoobs, setSelectedFundacaoobs] = useState(" "); 
+  const [selectedSustfixobs, setSelectedsustfixobs] = useState(" "); 
 
   return (
     <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
 
     <View style={{height: 120 , backgroundColor: '#64CAD9'}}></View>
 
-    <View style={{flex: 1, backgroundColor: '#214E88'}}>
+    <View style={{flex: 1, backgroundColor: '#214E88'}}> 
 
     <Text> VIAS DE ACESSO </Text>
     <Text> VIAS DE CIRCULAÇÃO E ILUMINAÇÃO </Text>
 
-    <Picker //criação dos pickers (caixas para seleção de opção )
+    
+    <Picker //criação dos pickers (caixas para seleção de opção ) // ver como dividir os flex *** 
         selectedValue={viacirculacao}
         style={{ height: 100, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setViacirculacao(itemValue)}
@@ -43,6 +52,14 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="NÃO SE APLICA" value="viacirculacaonao" />
         <Picker.Item label="*OBSERVAÇÃO" value="viacirculacaoobs1" /> 
       </Picker>  
+
+      { viacirculacao == "viacirculacaoobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setViacirculacaoobs}
+       />
+      }
 
       <Text> ESCADAS E ELEVADOR </Text>
       <Picker
@@ -55,6 +72,14 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*OBSERVACÃO" value="scadaelevadorobs1" /> 
       </Picker>  
 
+      { selectedescada == "scadaelevadorobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setSelectedEscadaobs}
+       />
+      }
+
       <Text> IDENTIFICAÇÃO </Text>
       <Text> PLACA DE IDENTIFICAÇÃO </Text>
       <Picker
@@ -66,6 +91,15 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="NÃO SE APLICA" value="pinao" />
         <Picker.Item label="*OBSERVAÇÃO" value="piobs1" /> 
       </Picker>  
+
+      { selectedpio == "piobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setSelectedPiobs}
+       />
+      }
+
       <Text> PLACA DE CATEGORIA </Text>
       <Picker
         selectedValue={selectedpdc}
@@ -76,6 +110,14 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="NÃO SE APLICA" value="pdcnao" />
         <Picker.Item label="*OBSERVAÇÃO" value="pdcobs1" /> 
       </Picker>  
+
+      { selectedpdc == "pdcobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setSelectedPdcobs}
+       />
+      }
 
       <Text> SUSTENTAÇÃO </Text>
 
@@ -89,6 +131,15 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="NÃO SE APLICA" value="fundacaonao" />
         <Picker.Item label="*OBSERVAÇÃO" value="fundacaoobs1" /> 
       </Picker>  
+
+      { selectedfundacao == "fundacaoobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setSelectedFundacaoobs}
+       />
+      }
+
       <Text> ELEMENTOS DE SUSTENTAÇÃO E FIXAÇÃO </Text>
       <Picker //criação dos pickers (caixas para seleção de opção )
         selectedValue={selectedSustfix}
@@ -101,6 +152,13 @@ export default function InspecaoExterna1({ route }) {
         <Picker.Item label="*OBSERVAÇÃO" value="sustfixobs1" /> 
       </Picker>  
 
+      { selectedSustfix == "sustfixobs1" &&
+       <TextInput  
+       placeholder="insira a observação"
+       underlineColorAndroid="transparent"
+       onChangeText={setSelectedsustfixobs}
+       />
+      }
 
     </View> 
     
