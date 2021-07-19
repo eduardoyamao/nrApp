@@ -30,8 +30,24 @@ export const mySchema = appSchema({
     tableSchema({
       name: 'comments',
       columns: [
-        { name: 'body', type: 'string' },
-        { name: 'post_id', type: 'string', isIndexed: true },
+        { name: 'viacirculacaoobs', type: 'string' },
+        { name: 'selelctedescadaobs', type: 'string' },
+        { name: 'selecteddpioobs', type: 'string' },
+        { name: 'selectedpdcobs', type: 'string' },
+    	{ name: 'selectedfundacaoobs', type: 'string' },
+        { name: 'selectedSustfixobs', type: 'string' },
+        { name: 'selectedValueseobs', type: 'string' },
+        { name: 'selectedValuejdiobs', type: 'sting' },
+        { name: 'selectedValueidsobs', type: 'string' },
+        { name: 'selectedValueidpobs', type: 'string' },
+        { name: 'selectedValuepobs', type: 'string' },
+        { name: 'selectedValuepurobs', type: 'string' },
+    	{ name: 'selectedValuemdnobs', type: 'string' },
+        { name: 'selectedValueatobs', type: 'string' },
+        { name: 'selectedValuecfvobs', type: 'string' },
+        { name: 'selectedValuetubobs', type: 'sting' },
+        { name: 'selectedValuecompobs', type: 'string' },
+        { name: 'selectedValuedcobs', type: 'string' },
       ]
     }),
   ]
