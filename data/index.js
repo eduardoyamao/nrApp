@@ -2,6 +2,7 @@ import { Platform } from 'react-native'
 import { Database } from '@nozbe/watermelondb'
 import SQLiteAdapter from '@nozbe/watermelondb/adapters/sqlite'
 
+import post from './post'
 import schema from './schema'
 import migrations from './migrations'
 // import Post from './model/Post' // ⬅️ You'll import your Models here
@@ -12,7 +13,7 @@ const adapter = new SQLiteAdapter({
   // (You might want to comment it out for development purposes -- see Migrations documentation)
   migrations,
   // (optional database name or file system path)
-  // dbName: 'myapp',
+   dbName: 'myapp',
   // (recommended option, should work flawlessly out of the box on iOS. On Android,
   // additional installation steps have to be taken - disable if you run into issues...)
   jsi: true, /* Platform.OS === 'ios' */
@@ -26,7 +27,7 @@ const adapter = new SQLiteAdapter({
 const database = new Database({
   adapter,
   modelClasses: [
-    // Post, // ⬅️ You'll add Models to Watermelon here
+     post, // ⬅️ You'll add Models to Watermelon here
   ],
   actionsEnabled: true,
 })
