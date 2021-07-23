@@ -43,8 +43,14 @@ export default class externa extends Model {
   @field('selectedValuedcobs_id') selectedValuedcobs; 
   @readonly @date('created_at') createdAt;
 
+  @action async rename(newName) {
+    await this.update(t => {
+      t.description = newName
+    })
+  }
+
   @action async delete() {
-    await super.markAsDeleted();
+    await this.markAsDeleted();
   };
 
 } 
