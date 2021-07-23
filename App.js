@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import{ NavigationContainer } from '@react-navigation/native';
 import {  createStackNavigator } from '@react-navigation/stack';
+import DatabaseProvider from '@nozbe/watermelondb/DatabaseProvider';
 
 //importando as pastas/componentes
 import Login from './src/pages/Login';
@@ -11,6 +12,7 @@ import InspecaoExterna3 from './src/pages/InspecaoExterna3';
 import InspecaoExterna4 from './src/pages/InspecaoExterna4';  
 import TelaConfirmacao from './src/pages/TelaConfirmacao'; 
 import Conversoes from './src/pages/Conversoes'; 
+import data from './data';
 
 //Criando a pilha de navegacao
 const Stack = createStackNavigator();
@@ -115,3 +117,5 @@ class App extends Component{
 }
 
 export default App;
+
+//fazer uma const declarando uma variavel e dentro dela setta o objeto headerstyle
