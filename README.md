@@ -1,5 +1,5 @@
 DESCRIÇÃO DO PROJETO
--adicionar aqui
+NrApp com a adição da tela de comentários. 
 
 BIBLIOTECAS ADICIONADAS
 
@@ -14,4 +14,4 @@ BIBLIOTECAS ADICIONADAS
       -      yarn add --dev @babel/plugin-transform-runtime
 
 OBSERVAÇÕES: 
--adicionar aqui
+Ainda não está funcionando o carregamento de imagem.
