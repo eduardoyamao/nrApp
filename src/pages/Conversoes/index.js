@@ -10,15 +10,27 @@ export default function Conversoes({ route }) {
   }
   
   return (
-    <View style={styles.container}>
-    <TextField
-      value={value.toString()}
-      label="Valor em MPa"
-      placeholder="0.000"
-      onChange={setValue}
+    <View style={{flex: 1, backgroundColor: '#64CAD9'}}>
+    <View style={{height: 120 , backgroundColor: '#64CAD9'}}></View>
+
+    <View style={{flex: 1, backgroundColor: '#214E88'}}>
+
+        <Text /* fran, coloca as coisas aqui dentro que vc for fazer da conversao */ >
+            coloque  tudo aqui   
+        </Text> 
+
+    </View> 
+
+    <Button // botao voltar
+     title=" Voltar "
+     onPress={ () => navigation.goBack() }
+     />
+
+    <Button //botao que chama a funcao ir para inicio
+    title="Voltar para Inicio!"
+    onPress={ irInicio }
     />
-    {result !== 0 && <Text style={styles.result}>= {result} kgf/cm²</Text>}
-    {!isNumber && <ErrorOutput error="Insira um valor numérico" />}
-  </View>
+    <View style={{height: 120, backgroundColor: '#64CAD9'}}></View>
+    </View>
    );
  }

@@ -3,11 +3,9 @@ apply plugin: "com.android.application"
 import com.android.build.OutputFile
 
 
-apply plugin: 'kotlin-android'
 // ...
 dependencies {
     // ...
-    implementation project(':watermelondb')
 }
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
@@ -144,6 +142,11 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    packagingOptions {
+        pickFirst '**/libc++_shared.so' // ⬅️ This (if missing)
+    }
+    
     splits {
         abi {
             reset()
@@ -194,6 +197,8 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+
+    implementation project(':watermelondb-jsi')
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
